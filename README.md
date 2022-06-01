@@ -23,6 +23,6 @@ yarn start
 yarn android
 
 # start on IOS
-yarn start
+yarn ios
 
 ```
