@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Image} from 'react-native';
 
-import {Button, Input, SafeAreaView, Text} from '@components';
+import {Button, Input, Loader, SafeAreaView} from '@components';
 import {globalStyles} from '@globalStyles';
 import {useFormik} from 'formik';
 import {icons, LoginSchema} from '@constants';
@@ -9,20 +9,20 @@ import {useLoginHelper} from './useLoginHelper';
 import {styles} from './styles';
 
 export const Login = () => {
-  const {initialValues} = useLoginHelper();
+  const {initialValues, isLoading, loginMutation} = useLoginHelper();
 
   const {values, errors, touched, handleChange, handleSubmit, handleBlur} =
     useFormik({
       initialValues,
       validationSchema: LoginSchema,
       onSubmit: async (values) => {
-        // await loginMutation(values);
-        console.log(values);
+        await loginMutation(values);
       },
     });
 
   return (
     <SafeAreaView edges={['top', 'left', 'right']}>
+      <Loader visible={isLoading} />
       <View style={globalStyles.container}>
         <View style={styles.header}>
           <View style={styles.iconContainer}>

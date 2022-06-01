@@ -34,6 +34,7 @@
       "@hooks": ["hooks/index.ts"],
       "@models": ["models/index.ts"],
       "@navigation": ["navigation/index.ts"],
+      "@store": ["store/index.ts"],
       "@screens": ["screens/index.ts"],
       "@utils": ["utils/index.ts"]
     }

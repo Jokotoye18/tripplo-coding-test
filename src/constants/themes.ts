@@ -41,7 +41,7 @@ export default {
   primaryColorLight: '#91919F',
   // secondaryColor: '#7647EE0',
   secondaryColor: '#4F73D4',
-  secondaryColorLight: '#F3F1FC',
+  secondaryColorLight: '#ABB9F0',
   borderColor: '#979797',
   secondaryBgDark: '#1E016F',
   secondaryDark: '#1E016F',

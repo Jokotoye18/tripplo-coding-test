@@ -82,12 +82,12 @@ export const Button = memo(
 
 const styles = StyleSheet.create({
   btn: {
-    borderRadius: layout.heightPixel(8),
+    borderRadius: layout.fontPixel(5),
     height: layout.heightPixel(60),
     backgroundColor: colors.secondaryColor,
   },
   btnOutlined: {
-    borderRadius: layout.heightPixel(8),
+    borderRadius: layout.fontPixel(5),
     height: layout.heightPixel(60),
     backgroundColor: 'transparent',
     borderWidth: 1,

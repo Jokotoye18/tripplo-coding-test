@@ -29,6 +29,7 @@ module.exports = {
           '@models': './src/models/index.ts',
           '@navigation': './src/navigation/index.ts',
           '@screens': './src/screens/index.ts',
+          '@store': './src/store/index.ts',
           '@utils': './src/utils/index.ts',
         },
       },

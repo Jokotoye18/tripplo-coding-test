@@ -46,6 +46,6 @@ export interface IStat {
 
 export interface IStanding {
   team: ITeam;
-  notes: INote;
+  note: INote;
   stats: IStat[];
 }

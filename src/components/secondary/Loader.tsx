@@ -22,13 +22,13 @@ export const Loader = memo(({visible}: LoaderProps) => {
           alignItems: 'center',
         }}
       >
-        <LottieView
+        {/* <LottieView
           source={loader}
           autoPlay
           loop
           style={{width: 100, height: 100}}
-        />
-        {/* <ActivityIndicator animating size="large" color={colors.primaryBg} /> */}
+        /> */}
+        <ActivityIndicator animating size="large" color={colors.primaryBg} />
       </View>
     </Modal>
   );
