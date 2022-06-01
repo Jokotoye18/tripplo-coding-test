@@ -7,9 +7,6 @@
 ---
 
 ```sh
-# install expo cli
-npm install -g expo-cli
-
 # install dependencies
 yarn install
 ```
